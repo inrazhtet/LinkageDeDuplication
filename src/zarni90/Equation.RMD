@@ -1,0 +1,43 @@
+---
+title: "Equation Markdown"
+author: "Zarni"
+date: "7/19/2017"
+output: html_document
+---
+
+
+
+$\Large\text{probability of linkage}^1 = \sum_{k=1}^n \text{log} \left( \frac{m_k}{u_k} \right)^{\gamma_k^j}\text{log}\left(\frac{1-m_k}{1-u_k}\right)^{1-\gamma_k^j} $
+
+
+$$
+\begin{align*}
+j &= \text {record pair in question} \\
+k &= \text {identifier (linking variable) in question} \\
+n &= \text {number of identifiers per record} \\
+m_k &= \text {estimated identifier agreement weight among true links} \\
+n_k &= \text {estimated identifier agreement weight among false links} \\
+\gamma_k^j &= \text {observed agreement or disagreement (0 or 1) of identifier k in record pair j }
+\end{align*}
+$$
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
